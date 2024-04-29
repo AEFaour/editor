@@ -1,0 +1,16 @@
+INSERT INTO houses (article, url, created_at) VALUES
+('Java', 'https://www.java.com/fr/', CURRENT_TIMESTAMP()),
+('Spring', 'https://spring.io/projects/spring-boot', CURRENT_TIMESTAMP()), 
+('ECMA', 'https://ecma-international.org', CURRENT_TIMESTAMP()),
+('Node JS', 'https://nodejs.org/en', CURRENT_TIMESTAMP()), 
+('NPM', 'https://www.npmjs.com/', CURRENT_TIMESTAMP()), 
+('Express JS', 'https://expressjs.com/', CURRENT_TIMESTAMP()), 
+('Next JS', 'https://nextjs.org/', CURRENT_TIMESTAMP()),
+('PostgreSQL', 'https://www.postgresql.org/', CURRENT_TIMESTAMP()), 
+('Posman', 'https://www.postman.com/', CURRENT_TIMESTAMP()), 
+('Docker', 'https://www.docker.com/', CURRENT_TIMESTAMP()), 
+('Kubernetes', 'https://kubernetes.io/', CURRENT_TIMESTAMP()), 
+('GitHub', 'https://github.com/', CURRENT_TIMESTAMP()), 
+('Jenkins', 'https://www.jenkins.io/', CURRENT_TIMESTAMP()), 
+('SonarQube', 'https://www.sonarsource.com/products/sonarqube/', CURRENT_TIMESTAMP()), 
+('Visual Studio Code', 'https://code.visualstudio.com/', CURRENT_TIMESTAMP());
