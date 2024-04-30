@@ -27,5 +27,5 @@ jobs:
         run: |
           mvn clean package jib:dockerBuild -DskipTests
           docker login --username=${{ secrets.DOCKER_USERNAME }} --password=${{ secrets.DOCKER_PASSWORD }}
-          docker image tag editor-api ${{ secrets.DOCKER_USERNAME }}/editor-api
-          docker image push ${{ secrets.DOCKER_USERNAME }}/editor-api
+          docker image tag editor-api:latest ${{ secrets.DOCKER_USERNAME }}/editor-api:latest
+          docker image push ${{ secrets.DOCKER_USERNAME }}/editor-api:latest
