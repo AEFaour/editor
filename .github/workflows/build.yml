@@ -31,9 +31,5 @@ jobs:
         name: Build and Publish Docker Image
         run: |
           mvn clean package jib:dockerBuild -DskipTests
-        uses: docker/build-push-action@v5
-        with:
-          push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/editor-api-jib:latest
-#          docker build . --file Dockerfile --tag ${{ secrets.DOCKER_USERNAME }}/editor-api-jib:latest
-#          docker image push ${{ secrets.DOCKER_USERNAME }}/editor-api-jib:latest
+          docker build . --file Dockerfile --tag ${{ secrets.DOCKER_USERNAME }}/editor-api-jib:latest
+          docker image push ${{ secrets.DOCKER_USERNAME }}/editor-api-jib:latest
